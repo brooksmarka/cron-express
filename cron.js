@@ -5,11 +5,12 @@ var nodemailer = require('nodemailer')
 const app = express()
 const port = 3000
 
-//sends every minute
-//cron.schedule("* * * * *",()=> {
+
 
 //sends every 4 hours
-cron.schedule("* */4 * * *",()=> {
+//cron.schedule("* */4 * * *",()=> {
+//sends every minute
+cron.schedule("* * * * *",()=> {
     console.log("send the email now")
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
