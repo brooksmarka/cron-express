@@ -12,7 +12,7 @@ let bot;
    bot = new TelegramBot(token, { polling: true });
 // }
 
-bot.sendMessage(process.env.TELEGRAM_CHAT_ID, "YO DUDE WHATS UP NODE STARTED")
+bot.sendMessage(process.env.TELEGRAM_CHAT_ID, "Ski Scraper Bot has started!")
 
 bot.on('message', (msg) => {
 
